@@ -83,54 +83,6 @@ body {
     background-color: #a50000;
 }
 
-#content {
-    background-color: whitesmoke;
-    border-radius: 64px;
-    margin-top: 32px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-bottom: 32px;
-    padding-top: 64px;
-    padding-bottom: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
-    overflow: auto;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Make layout adapt on small screens */
-@media (max-width: 900px) {
-    #content {
-        border-radius: 20px;
-        margin: 20px 20px;
-        padding: 32px 18px;
-    }
-}
-
-@media (max-width: 600px) {
-    #content {
-        margin: 16px 12px;
-        padding: 20px 14px;
-        border-radius: 12px;
-    }
-    
-    .wrap {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: stretch;
-    }
-    .rounded-button {
-        width: 100%;
-        justify-content: center;
-        padding: 12px;
-    }
-    .rounded-button img { width: 20px; }
-}
-
-
 #capsule {
     max-width: 85%;
     height: auto;
