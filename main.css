@@ -1,0 +1,159 @@
+body {
+    font-family: Rubik;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    color: #ff5d38;
+    font-size: 32px;
+}
+
+a {
+    color: #2fbf1c;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body {
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    
+}
+
+.rounded-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    margin: 8px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.rounded-button img {
+    width: 32px;
+    height: auto;
+    display: block;
+}
+
+#steam{
+    background-color: #162536;
+}
+
+#steam:hover{
+    background-color: #0a111a;
+}
+
+#discord{
+    background-color: #5865F2;
+}
+
+#discord:hover{
+    background-color: #3d46a8;
+}
+
+#youtube{
+    background-color: #f00000;
+}
+
+#youtube:hover{
+    background-color: #a50000;
+}
+
+#content {
+    background-color: whitesmoke;
+    border-radius: 64px;
+    margin-top: 32px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 32px;
+    padding-top: 64px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    overflow: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make layout adapt on small screens */
+@media (max-width: 900px) {
+    #content {
+        border-radius: 20px;
+        margin: 20px 20px;
+        padding: 32px 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    #content {
+        margin: 16px 12px;
+        padding: 20px 14px;
+        border-radius: 12px;
+    }
+    
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    .rounded-button {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+    }
+    .rounded-button img { width: 20px; }
+}
+
+
+#capsule {
+    max-width: 85%;
+    height: auto;
+    border-radius: 64px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+#intro {
+    font-size: 24px;
+    text-align: center;
+}
+
+body::after{
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25vh; /* adjust thickness */
+  pointer-events: none; /* allows clicks through */
+  background: linear-gradient(to top, rgba(0,0,0,0.35), rgba(0,0,0,0)); /* adjust opacity */
+  z-index: 9999;
+}
